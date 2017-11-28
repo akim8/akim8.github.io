@@ -32,6 +32,18 @@ a:active, a:hover {
 	width: 100%;
 	height: 100%;
 }
+::selection {
+	color: #000;
+	background-color: #ffba0a;
+}
+::-moz-selection {
+	color: #000;
+	background-color: #ffba0a;
+}
+::-webkit-selection {
+	color: #000;
+	background-color: #ffba0a;
+}
 
 /* Page Styling */
 .content {

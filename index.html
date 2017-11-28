@@ -12,14 +12,8 @@
 			img {
 				max-width: 100%;
 			}
-			h1 {
-				font-size: 32px;
-				position: relative;
-			}
 			h1 .emoji {
 				height: 32px;
-				position: absolute;
-				bottom: 0;
 			}
 			.content {
 				background-color: #fff;
@@ -39,13 +33,21 @@
 			.footer a:active, .footer a:hover {
 				color: #fff;
 			}
+			.spin {
+				transform: rotateY(540deg);
+			}
+			#hand {
+				display: inline-block;
+				cursor: pointer;
+				transition: transform .3s;
+			}
 		</style>
 	</head>
 	<body>
 		<div class="fullpage">
 			<div class="content tmid">
 				<img src="images/mae.gif" class="tmid">
-				<h1 class="center">Hello! I'm Alex.&nbsp;&#x1F44B;</h1>
+				<h1 class="center">Hello! I'm Alex. <div id="hand">&#x1F44B;</div></h1>
 				<p>I'm a computer science student at Central Michigan University.</p>
 				<p>I program web pages and video games in my free time. You can check them out on <a href="https://github.com/kim4a">Github</a>.</p>
 				<p>Feel free to email me at <span id="em">kim4a (at) cmich (&middot;) edu</span>.</p>
