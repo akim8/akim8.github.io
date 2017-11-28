@@ -1,18 +1,22 @@
 window.onload = function(e) {
 	// Prevent double-tap zoom on mobile
 	document.body.addEventListener('touchstart', preventZoom);
+
 	// create mailto link
 	var em = document.getElementById('em');
 	if (em != null) {
 		var temp = "kim4a&#064;cmich&#046;edu";
 		em.innerHTML = "<a href=\"mailto:" + temp + "\">" + temp + "</a>";
 	}
+
 	// parse twemoji
 	twemoji.parse(document.body, {size: 1, folder: 'svg', ext: '.svg'});
+
 	// High five
-	document.getElementById('hand').addEventListener("touchstart", hi5);
+	document.getElementById('hand').addEventListener("touchend", hi5);
 	document.getElementById('hand').addEventListener("click", hi5);
 }
+
 function preventZoom(e) {
 	var t2 = e.timeStamp;
 	var t1 = e.currentTarget.dataset.lastTouch || t2;
@@ -23,7 +27,14 @@ function preventZoom(e) {
 	e.preventDefault();
 	e.target.click();
 }
+
+// https://stackoverflow.com/a/7019461
+var alreadyFired = false;
 function hi5() {
-	var hand = document.getElementById('hand');
-	hand.classList.toggle('spin');
+	if (!alreadyFired) {
+		alreadyFired = true;
+		setTimeout(function(){ alreadyFired = false; }, 100);
+		var hand = document.getElementById('hand');
+		hand.classList.toggle('spin');
+	}
 }
