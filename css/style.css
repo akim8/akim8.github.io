@@ -1,0 +1,40 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+/* General styling */
+html, body {
+	font-family: 'Varela Round', sans-serif;
+	background-color: #fee370;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+hr {
+	border: none;
+	border-top: 1px dashed #888;
+}
+a:link, a:visited {
+	color: #000;
+}
+a:active, a:hover {
+	color: #fff;
+	text-decoration: none;
+	background-color: #000;
+}
+.center {
+	text-align: center;
+}
+.tmid { /* center block-level elements */
+	margin: 0px auto;
+}
+.fullpage {
+	width: 100%;
+	height: 100%;
+}
+
+/* Page Styling */
+.content {
+	width: 100%;
+	max-width: 800px;
+}

@@ -3,21 +3,57 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kim4a</title>
-    <meta name="description" content="Student page">
-    <link rel="icon" type="image/png" href="https://avatars0.githubusercontent.com/u/31960676">
+    <meta name="description" content="Homepage of kim4a.">
+    <link rel="icon" type="image/png" href="images/mae.gif">
     <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">
-    <link rel="apple-touch-icon" href="https://avatars0.githubusercontent.com/u/31960676">
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-    <style>
-      h1 {
-        font-family: 'Varela Round', sans-serif;
-      }
-    </style>
-  </head>
-  <body>
-    <center>
-      <img src="https://avatars0.githubusercontent.com/u/31960676">
-      <h1>t2</h1>
-    </center>
-  </body>
+    <link rel="apple-touch-icon" href="images/mae.gif">
+		<link rel="stylesheet" href="css/style.css">
+		<style media="screen">
+			img {
+				max-width: 100%;
+			}
+			h1 {
+				font-size: 32px;
+				position: relative;
+			}
+			h1 .emoji {
+				height: 32px;
+				position: absolute;
+				bottom: 0;
+			}
+			.content {
+				background-color: #fff;
+				width: calc(100% - 80px);
+				min-height: calc(100% - 80px);
+				padding: 40px;
+			}
+			.tmid > img {
+				display: block;
+			}
+			.footer {
+				color: #888;
+			}
+			.footer a:link, .footer a:visited {
+				color: #888;
+			}
+			.footer a:active, .footer a:hover {
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="fullpage">
+			<div class="content tmid">
+				<img src="images/mae.gif" class="tmid">
+				<h1 class="center">Hello! I'm Alex.&nbsp;&#x1F44B;</h1>
+				<p>I'm a computer science student at Central Michigan University.</p>
+				<p>I program web pages and video games in my free time. You can check them out on <a href="https://github.com/kim4a">Github</a>.</p>
+				<p>Feel free to email me at <span id="em">kim4a (at) cmich (&middot;) edu</span>.</p>
+				<hr>
+				<p class="footer">The image is not mine. It's fan art of <a href="http://www.nightinthewoods.com">Night in the Woods</a> by <a href="http://tatianakawkaw.tumblr.com/post/158812514969/mae-borowski-from-night-in-the-woods">Tatiana Kawkaw</a>.</p>
+			</div>
+		</div>
+		<script src="https://twemoji.maxcdn.com/2/twemoji.min.js?2.3.1"></script>
+		<script src="js/script.js" charset="utf-8"></script>
+	</body>
 </html>
