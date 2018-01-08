@@ -10,17 +10,18 @@ html, body {
 	padding: 0;
 	margin: 0;
 }
-hr {
-	border: none;
-	border-top: 1px dashed #888;
+p {
 }
 a:link, a:visited {
 	color: #000;
 }
 a:active, a:hover {
-	color: #fff;
 	text-decoration: none;
-	background-color: #000;
+	background-color: #fee370;
+}
+hr {
+	border: none;
+	border-top: 1px dashed #888;
 }
 .center {
 	text-align: center;
