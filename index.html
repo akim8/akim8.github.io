@@ -35,24 +35,13 @@
 				text-decoration: none;
 			}
 			.projectcard {
-				background-repeat: no-repeat;
-				background-position: center;
-				background-size: cover;
-				width: calc(100% - 70px);
-				padding: 30px;
-				margin: 5px;
+				width: calc(100% - 30px);
+				height: 30%;
+				margin: 15px;
 				margin-bottom: 20px;
-				border: 0 solid #fee370;
+			}
+			.projectcard img {
 				border-radius: 20px;
-				-webkit-transition: padding .25s, border .25s;
-				transition: padding .25s, border .25s;
-			}
-			.projectcard:hover {
-				padding: 20px;
-				border: 10px solid #fee370;
-			}
-			.projectcard h3, .projectcard p {
-				text-shadow: -1px -1px #fff, 0 -1px #fff, 1px -1px #fff, -1px 0 #fff, 1px 0 #fff, -1px 1px #fff, 0 1px #fff, 1px 1px #fff;
 			}
 			#hand {
 				display: inline-block;
@@ -80,23 +69,13 @@
 				<div class="projects">
 					<h2 class="center">Projects</h2>
 					<a href="https://github.com/kim4a/Intro-To-Multimedia-Final-Project">
-						<div class="projectcard" style="background-image: linear-gradient( 90deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.25)), url('images/chairquestthumb.png');">
-							<h3>
-								Chair Quest
-							</h3>
-							<p>
-								A game made as a final project for my multimedia class.
-							</p>
+						<div class="projectcard">
+							<img src="images/chairquestthumb.png">
 						</div>
 					</a>
 					<a href="https://kim4a.github.io/different-xkcd/">
-						<div class="projectcard" style="background-image: linear-gradient( 90deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.25)), url('images/differentxkcdthumb.png');">
-							<h3>
-								Different xkcd
-							</h3>
-							<p>
-								A mobile friendly web reader for the popular comic, xkcd.
-							</p>
+						<div class="projectcard">
+							<img src="images/differentxkcdthumb.png">
 						</div>
 					</a>
 				</div>
