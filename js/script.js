@@ -5,7 +5,7 @@ window.onload = function(e) {
 	// create mailto link
 	var em = document.getElementById('em');
 	if (em != null) {
-		var temp = "kim4a&#064;cmich&#046;edu";
+		var temp = "akim8&#064;emich&#046;edu";
 		em.innerHTML = "<a href=\"mailto:" + temp + "\">" + temp + "</a>";
 	}
 
